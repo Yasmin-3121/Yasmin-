@@ -1,0 +1,58 @@
+Alright! Here’s a simple example of HTML and CSS that shows images on a webpage with some styling:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://placekitten.com/300/200" alt="Cute kitten 1" />
+    <img src="https://placekitten.com/301/200" alt="Cute kitten 2" />
+    <img src="https://placekitten.com/302/200" alt="Cute kitten 3" />
+    <img src="https://placekitten.com/303/200" alt="Cute kitten 4" />
+  </div>
+
+</body>
+</html>
+
+Just copy and paste this code into a .html file and open it in your browser. It will show a row of cute kitten images that zoom slightly when you hover over them.
+
+Want me to help you customize it? Maybe different images or a different style?
+
